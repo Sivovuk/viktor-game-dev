@@ -1,6 +1,6 @@
 import React from "react";
 import { personalInfo } from "../data/mock";
-import { MapPin, ArrowDown, Github, Linkedin, Twitter } from "lucide-react";
+import { MapPin, ArrowDown, Linkedin, Globe, ExternalLink } from "lucide-react";
 import { Badge } from "./ui/badge";
 
 const HeroSection = () => {
@@ -36,8 +36,8 @@ const HeroSection = () => {
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-slate-900 leading-[1.08] tracking-tight mb-6">
             Hey. I'm Viktor —
             <br />
-            <span className="text-purple-600">game developer</span>{" "}
-            and digital craftsman.
+            <span className="text-purple-600">Unity developer</span>{" "}
+            and game craftsman.
           </h1>
 
           {/* Bio */}
@@ -73,9 +73,9 @@ const HeroSection = () => {
 
             <div className="flex items-center gap-3">
               {[
-                { icon: Github, href: personalInfo.socialLinks.github, label: "GitHub" },
                 { icon: Linkedin, href: personalInfo.socialLinks.linkedin, label: "LinkedIn" },
-                { icon: Twitter, href: personalInfo.socialLinks.twitter, label: "Twitter" },
+                { icon: Globe, href: personalInfo.socialLinks.portfolio, label: "Portfolio" },
+                { icon: ExternalLink, href: personalInfo.socialLinks.website, label: "Website" },
               ].map(({ icon: Icon, href, label }) => (
                 <a
                   key={label}

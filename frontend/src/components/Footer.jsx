@@ -1,6 +1,6 @@
 import React from "react";
 import { personalInfo } from "../data/mock";
-import { Gamepad2, Github, Linkedin, Twitter, ArrowUp } from "lucide-react";
+import { Gamepad2, Linkedin, Globe, ExternalLink, ArrowUp } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -27,9 +27,9 @@ const Footer = () => {
           {/* Social + Back to top */}
           <div className="flex items-center gap-4">
             {[
-              { icon: Github, href: personalInfo.socialLinks.github, label: "GitHub" },
               { icon: Linkedin, href: personalInfo.socialLinks.linkedin, label: "LinkedIn" },
-              { icon: Twitter, href: personalInfo.socialLinks.twitter, label: "Twitter" },
+              { icon: Globe, href: personalInfo.socialLinks.portfolio, label: "Portfolio" },
+              { icon: ExternalLink, href: personalInfo.socialLinks.website, label: "Website" },
             ].map(({ icon: Icon, href, label }) => (
               <a
                 key={label}

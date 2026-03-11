@@ -1,27 +1,27 @@
 import React from "react";
 import { personalInfo } from "../data/mock";
-import { Gamepad2, Code2, Cpu, Rocket } from "lucide-react";
+import { Gamepad2, Code2, Cpu, Rocket, CheckCircle2 } from "lucide-react";
 
 const highlights = [
   {
     icon: Gamepad2,
-    title: "8+ Years in Unity",
-    desc: "Deep expertise in Unity engine, from 2D mobile to complex 3D and VR experiences.",
+    title: "7+ Years in Unity",
+    desc: "Deep expertise across 2D, 3D, mobile, WebGL, and VR platforms — from prototypes to shipped titles.",
   },
   {
     icon: Code2,
-    title: "Clean Architecture",
-    desc: "I write modular, testable code using design patterns that scale with your project.",
+    title: "C# & Architecture",
+    desc: "OOP, SOLID, design patterns, and Scriptable Object Architecture for scalable, maintainable code.",
   },
   {
     icon: Cpu,
     title: "Performance First",
-    desc: "Every frame counts. I optimize for silky smooth gameplay on any target platform.",
+    desc: "CPU/GPU profiling, Addressables, memory optimization — silky smooth on any target device.",
   },
   {
     icon: Rocket,
     title: "Ship & Iterate",
-    desc: "From prototype to store launch — I've guided 10+ titles through the full pipeline.",
+    desc: "End-to-end delivery from mechanics to deployment. Multiple titles with millions of downloads.",
   },
 ];
 
@@ -39,9 +39,22 @@ const AboutSection = () => {
             <br />
             polished realities.
           </h2>
-          <p className="text-lg text-slate-600 leading-relaxed max-w-3xl">
+          <p className="text-lg text-slate-600 leading-relaxed max-w-3xl mb-8">
             {personalInfo.aboutExtended}
           </p>
+
+          {/* What I Offer */}
+          <div className="flex flex-wrap gap-3 max-w-3xl">
+            {personalInfo.whatIOffer.map((item) => (
+              <div
+                key={item}
+                className="flex items-center gap-2 bg-purple-50/60 rounded-full px-4 py-2 border border-purple-100/50"
+              >
+                <CheckCircle2 className="w-4 h-4 text-purple-600 flex-shrink-0" />
+                <span className="text-sm text-slate-700 font-medium">{item}</span>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Highlight cards */}

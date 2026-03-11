@@ -7,6 +7,7 @@ const statusColors = {
   Shipped: "bg-emerald-50 text-emerald-700 border-emerald-200",
   "In Development": "bg-amber-50 text-amber-700 border-amber-200",
   "Open Source": "bg-sky-50 text-sky-700 border-sky-200",
+  "5M+ Downloads": "bg-purple-50 text-purple-700 border-purple-200",
 };
 
 const ProjectsSection = () => {
