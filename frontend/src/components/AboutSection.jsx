@@ -35,9 +35,9 @@ const AboutSection = () => {
             About Me
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
-            Turning game ideas into
+            Game and tools craftsman,
             <br />
-            polished realities.
+            turning ideas into realities.
           </h2>
           <p className="text-lg text-slate-600 leading-relaxed max-w-3xl mb-8">
             {personalInfo.aboutExtended}
