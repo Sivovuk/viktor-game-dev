@@ -5,7 +5,7 @@ import { Gamepad2, Code2, Cpu, Rocket, CheckCircle2 } from "lucide-react";
 const highlights = [
   {
     icon: Gamepad2,
-    title: "7+ Years in Unity",
+    title: "8+ Years in Unity",
     desc: "Deep expertise across 2D, 3D, mobile, WebGL, and VR platforms — from prototypes to shipped titles.",
   },
   {

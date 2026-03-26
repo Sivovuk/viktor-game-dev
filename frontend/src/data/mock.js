@@ -4,7 +4,7 @@ export const personalInfo = {
   shortTitle: "Game Developer",
   location: "Niš, Serbia",
   phone: "+381645413549",
-  bio: "With over 7 years of hands-on Unity experience, I help studios and indie teams bring their game ideas to life — from prototype to polished release. I specialize in creating scalable, optimized, and visually engaging gameplay systems across 2D, 3D, mobile, and WebGL platforms.",
+  bio: "With over 8 years of hands-on Unity experience, I help studios and indie teams bring their game ideas to life — from prototype to polished release. I specialize in creating scalable, optimized, and visually engaging gameplay systems across 2D, 3D, mobile, and WebGL platforms.",
   email: "viktorzbpe97@gmail.com",
   roles: ["Unity Expert", "C# Programmer", "Multiplayer Specialist", "Mobile & WebGL"],
   aboutExtended: "Whether it's building smooth UI/UX, integrating multiplayer features, or optimizing for performance on mobile, I bring deep technical expertise and production-ready solutions. I'm passionate about building fun, performant, and maintainable games. If you're looking for a Unity developer who can jump into your project and deliver high-quality results, let's talk!",
