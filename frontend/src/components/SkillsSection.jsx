@@ -17,7 +17,7 @@ const SkillsSection = () => {
       <div className="max-w-6xl mx-auto px-6">
         {/* Section header */}
         <div className="mb-12">
-          <span className="inline-block text-purple-600 text-sm font-semibold tracking-wider uppercase mb-3">
+          <span className="inline-block text-blue-600 text-sm font-semibold tracking-wider uppercase mb-3">
             Skills & Expertise
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
@@ -36,8 +36,8 @@ const SkillsSection = () => {
               onClick={() => setActiveCategory(cat)}
               className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${
                 activeCategory === cat
-                  ? "bg-purple-600 text-white shadow-sm"
-                  : "bg-white text-slate-600 border border-slate-200 hover:border-purple-200 hover:text-purple-600"
+                  ? "bg-blue-600 text-white shadow-sm"
+                  : "bg-white text-slate-600 border border-slate-200 hover:border-blue-200 hover:text-blue-600"
               }`}
             >
               {cat}
@@ -50,14 +50,14 @@ const SkillsSection = () => {
           {filtered.map((skill) => (
             <div
               key={skill.name}
-              className="group bg-white rounded-xl px-5 py-3.5 border border-slate-100 hover:border-purple-200 hover:shadow-md hover:shadow-purple-50/50 transition-all duration-300"
+              className="group bg-white rounded-xl px-5 py-3.5 border border-slate-100 hover:border-blue-200 hover:shadow-md hover:shadow-blue-50/50 transition-all duration-300"
             >
-              <span className="text-sm font-semibold text-slate-800 group-hover:text-purple-700 transition-colors duration-200">
+              <span className="text-sm font-semibold text-slate-800 group-hover:text-blue-700 transition-colors duration-200">
                 {skill.name}
               </span>
               <Badge
                 variant="secondary"
-                className="ml-2.5 text-xs font-medium bg-purple-50 text-purple-600 border-0"
+                className="ml-2.5 text-xs font-medium bg-blue-50 text-blue-600 border-0"
               >
                 {skill.category}
               </Badge>

@@ -10,12 +10,12 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-3">
-              <div className="w-8 h-8 rounded-lg bg-purple-600 flex items-center justify-center">
+              <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center">
                 <Gamepad2 className="w-4 h-4 text-white" />
               </div>
               <span className="font-semibold text-sm tracking-tight">
                 {personalInfo.name.split(" ")[0].toLowerCase()}
-                <span className="text-purple-400">.dev</span>
+                <span className="text-blue-400">.dev</span>
               </span>
             </div>
             <p className="text-sm text-slate-400 max-w-sm">
@@ -36,7 +36,7 @@ const Footer = () => {
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg bg-slate-800 flex items-center justify-center text-slate-400 hover:text-purple-400 hover:bg-slate-700 transition-all duration-200"
+                className="w-9 h-9 rounded-lg bg-slate-800 flex items-center justify-center text-slate-400 hover:text-blue-400 hover:bg-slate-700 transition-all duration-200"
                 aria-label={label}
               >
                 <Icon className="w-4 h-4" />
@@ -45,7 +45,7 @@ const Footer = () => {
 
             <button
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-              className="w-9 h-9 rounded-lg bg-purple-600 flex items-center justify-center text-white hover:bg-purple-500 transition-all duration-200 ml-2"
+              className="w-9 h-9 rounded-lg bg-blue-600 flex items-center justify-center text-white hover:bg-blue-500 transition-all duration-200 ml-2"
               aria-label="Back to top"
             >
               <ArrowUp className="w-4 h-4" />

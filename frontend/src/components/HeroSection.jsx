@@ -7,7 +7,7 @@ const HeroSection = () => {
   return (
     <section className="relative min-h-[92vh] flex items-center overflow-hidden">
       {/* Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-amber-50 via-purple-50/60 to-violet-100/80" />
+      <div className="absolute inset-0 bg-gradient-to-br from-sky-50 via-blue-50/60 to-indigo-100/80" />
       
       {/* Subtle grid pattern */}
       <div
@@ -20,14 +20,14 @@ const HeroSection = () => {
       />
 
       {/* Floating orbs */}
-      <div className="absolute top-20 right-1/4 w-72 h-72 bg-purple-300/20 rounded-full blur-3xl animate-pulse" />
+      <div className="absolute top-20 right-1/4 w-72 h-72 bg-blue-300/20 rounded-full blur-3xl animate-pulse" />
       <div className="absolute bottom-20 left-1/4 w-96 h-96 bg-amber-200/20 rounded-full blur-3xl" />
 
       <div className="relative max-w-6xl mx-auto px-6 pt-24 pb-16 w-full">
         <div className="max-w-3xl">
           {/* Location badge */}
-          <div className="inline-flex items-center gap-2 bg-white/60 backdrop-blur-sm rounded-full px-4 py-2 mb-8 border border-purple-100/50 shadow-sm">
-            <MapPin className="w-3.5 h-3.5 text-purple-600" />
+          <div className="inline-flex items-center gap-2 bg-white/60 backdrop-blur-sm rounded-full px-4 py-2 mb-8 border border-blue-100/50 shadow-sm">
+            <MapPin className="w-3.5 h-3.5 text-blue-600" />
             <span className="text-sm text-slate-600 font-medium">{personalInfo.location}</span>
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
           </div>
@@ -36,8 +36,8 @@ const HeroSection = () => {
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-slate-900 leading-[1.08] tracking-tight mb-6">
             Hey. I'm Viktor —
             <br />
-            <span className="text-purple-600">multiplayer</span> &{" "}
-            <span className="text-purple-600">systems</span> engineer.
+            <span className="text-blue-600">multiplayer</span> &{" "}
+            <span className="text-blue-600">systems</span> engineer.
           </h1>
 
           {/* Bio */}
@@ -50,7 +50,7 @@ const HeroSection = () => {
             {personalInfo.roles.map((role) => (
               <Badge
                 key={role}
-                className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-1.5 text-sm font-medium rounded-full transition-colors duration-200 cursor-default"
+                className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-1.5 text-sm font-medium rounded-full transition-colors duration-200 cursor-default"
               >
                 {role}
               </Badge>
@@ -82,7 +82,7 @@ const HeroSection = () => {
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-white/60 backdrop-blur-sm border border-purple-100/50 flex items-center justify-center text-slate-500 hover:text-purple-600 hover:border-purple-200 hover:bg-white transition-all duration-200"
+                  className="w-10 h-10 rounded-full bg-white/60 backdrop-blur-sm border border-blue-100/50 flex items-center justify-center text-slate-500 hover:text-blue-600 hover:border-blue-200 hover:bg-white transition-all duration-200"
                   aria-label={label}
                 >
                   <Icon className="w-4 h-4" />

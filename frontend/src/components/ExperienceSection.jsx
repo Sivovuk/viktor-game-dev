@@ -8,7 +8,7 @@ const ExperienceSection = () => {
       <div className="max-w-6xl mx-auto px-6">
         {/* Section header */}
         <div className="mb-14">
-          <span className="inline-block text-purple-600 text-sm font-semibold tracking-wider uppercase mb-3">
+          <span className="inline-block text-blue-600 text-sm font-semibold tracking-wider uppercase mb-3">
             Work Experience
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
@@ -22,23 +22,23 @@ const ExperienceSection = () => {
         {/* Timeline */}
         <div className="relative">
           {/* Vertical line */}
-          <div className="absolute left-[19px] top-2 bottom-2 w-px bg-gradient-to-b from-purple-200 via-purple-300 to-purple-100 hidden md:block" />
+          <div className="absolute left-[19px] top-2 bottom-2 w-px bg-gradient-to-b from-blue-200 via-blue-300 to-blue-100 hidden md:block" />
 
           <div className="space-y-8">
             {experience.map((exp, index) => (
               <div key={exp.id} className="relative md:pl-14">
                 {/* Timeline dot */}
                 <div className="absolute left-2.5 top-2 hidden md:flex">
-                  <div className="w-[15px] h-[15px] rounded-full bg-purple-600 ring-4 ring-purple-100" />
+                  <div className="w-[15px] h-[15px] rounded-full bg-blue-600 ring-4 ring-blue-100" />
                 </div>
 
-                <div className="group bg-slate-50/60 rounded-2xl p-6 sm:p-8 border border-slate-100 hover:border-purple-100 hover:bg-white hover:shadow-lg hover:shadow-purple-50/40 transition-all duration-300">
+                <div className="group bg-slate-50/60 rounded-2xl p-6 sm:p-8 border border-slate-100 hover:border-blue-100 hover:bg-white hover:shadow-lg hover:shadow-blue-50/40 transition-all duration-300">
                   {/* Header row */}
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-4">
                     <div>
                       <h3 className="text-lg font-bold text-slate-900">{exp.role}</h3>
                       <div className="flex items-center gap-3 mt-1">
-                        <span className="flex items-center gap-1.5 text-sm text-purple-600 font-medium">
+                        <span className="flex items-center gap-1.5 text-sm text-blue-600 font-medium">
                           <Briefcase className="w-3.5 h-3.5" />
                           {exp.company}
                         </span>
@@ -61,7 +61,7 @@ const ExperienceSection = () => {
                   <ul className="space-y-2">
                     {exp.highlights.map((item, i) => (
                       <li key={i} className="flex items-start gap-2 text-sm text-slate-600">
-                        <ChevronRight className="w-4 h-4 text-purple-400 mt-0.5 flex-shrink-0" />
+                        <ChevronRight className="w-4 h-4 text-blue-400 mt-0.5 flex-shrink-0" />
                         <span>{item}</span>
                       </li>
                     ))}

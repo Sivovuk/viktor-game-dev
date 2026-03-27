@@ -49,7 +49,7 @@ const ContactSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Left: Info */}
           <div>
-            <span className="inline-block text-purple-600 text-sm font-semibold tracking-wider uppercase mb-3">
+            <span className="inline-block text-blue-600 text-sm font-semibold tracking-wider uppercase mb-3">
               Get in Touch
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
@@ -65,14 +65,14 @@ const ContactSection = () => {
 
             <div className="space-y-4">
               <div className="flex items-center gap-3 text-slate-600">
-                <div className="w-10 h-10 rounded-xl bg-purple-50 flex items-center justify-center">
-                  <Mail className="w-4 h-4 text-purple-600" />
+                <div className="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center">
+                  <Mail className="w-4 h-4 text-blue-600" />
                 </div>
                 <span className="text-sm font-medium">{personalInfo.email}</span>
               </div>
               <div className="flex items-center gap-3 text-slate-600">
-                <div className="w-10 h-10 rounded-xl bg-purple-50 flex items-center justify-center">
-                  <svg className="w-4 h-4 text-purple-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <div className="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center">
+                  <svg className="w-4 h-4 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
                     <circle cx="12" cy="10" r="3" />
                   </svg>
@@ -105,7 +105,7 @@ const ContactSection = () => {
                       value={form.name}
                       onChange={(e) => handleChange("name", e.target.value)}
                       placeholder="John Doe"
-                      className={`pl-10 bg-white border-slate-200 focus:border-purple-300 focus:ring-purple-200 ${
+                      className={`pl-10 bg-white border-slate-200 focus:border-blue-300 focus:ring-blue-200 ${
                         errors.name ? "border-red-300" : ""
                       }`}
                     />
@@ -125,7 +125,7 @@ const ContactSection = () => {
                       value={form.email}
                       onChange={(e) => handleChange("email", e.target.value)}
                       placeholder="john@example.com"
-                      className={`pl-10 bg-white border-slate-200 focus:border-purple-300 focus:ring-purple-200 ${
+                      className={`pl-10 bg-white border-slate-200 focus:border-blue-300 focus:ring-blue-200 ${
                         errors.email ? "border-red-300" : ""
                       }`}
                     />
@@ -145,7 +145,7 @@ const ContactSection = () => {
                       onChange={(e) => handleChange("message", e.target.value)}
                       placeholder="Tell me about your project..."
                       rows={5}
-                      className={`pl-10 bg-white border-slate-200 focus:border-purple-300 focus:ring-purple-200 resize-none ${
+                      className={`pl-10 bg-white border-slate-200 focus:border-blue-300 focus:ring-blue-200 resize-none ${
                         errors.message ? "border-red-300" : ""
                       }`}
                     />
@@ -155,7 +155,7 @@ const ContactSection = () => {
 
                 <button
                   type="submit"
-                  className="w-full flex items-center justify-center gap-2 bg-purple-600 hover:bg-purple-700 text-white py-3 rounded-xl text-sm font-semibold transition-all duration-200 hover:shadow-lg hover:shadow-purple-200/50"
+                  className="w-full flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-xl text-sm font-semibold transition-all duration-200 hover:shadow-lg hover:shadow-blue-200/50"
                 >
                   <Send className="w-4 h-4" />
                   Send Message

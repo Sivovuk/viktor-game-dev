@@ -7,7 +7,7 @@ const statusColors = {
   Shipped: "bg-emerald-50 text-emerald-700 border-emerald-200",
   "In Development": "bg-amber-50 text-amber-700 border-amber-200",
   "Open Source": "bg-sky-50 text-sky-700 border-sky-200",
-  "5M+ Downloads": "bg-purple-50 text-purple-700 border-purple-200",
+  "5M+ Downloads": "bg-blue-50 text-blue-700 border-blue-200",
 };
 
 const ProjectsSection = () => {
@@ -18,7 +18,7 @@ const ProjectsSection = () => {
       <div className="max-w-6xl mx-auto px-6">
         {/* Section header */}
         <div className="mb-14">
-          <span className="inline-block text-purple-600 text-sm font-semibold tracking-wider uppercase mb-3">
+          <span className="inline-block text-blue-600 text-sm font-semibold tracking-wider uppercase mb-3">
             Projects & Portfolio
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
@@ -34,18 +34,18 @@ const ProjectsSection = () => {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="group relative bg-white rounded-2xl border border-slate-100 overflow-hidden hover:border-purple-100 hover:shadow-xl hover:shadow-purple-50/40 transition-all duration-300 hover:-translate-y-1"
+              className="group relative bg-white rounded-2xl border border-slate-100 overflow-hidden hover:border-blue-100 hover:shadow-xl hover:shadow-blue-50/40 transition-all duration-300 hover:-translate-y-1"
               onMouseEnter={() => setHoveredId(project.id)}
               onMouseLeave={() => setHoveredId(null)}
             >
               {/* Card top accent */}
-              <div className="h-1.5 bg-gradient-to-r from-purple-500 via-purple-400 to-amber-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="h-1.5 bg-gradient-to-r from-blue-500 via-blue-400 to-amber-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
               <div className="p-6">
                 {/* Header */}
                 <div className="flex items-start justify-between mb-4">
-                  <div className="w-10 h-10 rounded-xl bg-purple-50 flex items-center justify-center group-hover:bg-purple-100 transition-colors duration-200">
-                    <Folder className="w-5 h-5 text-purple-600" />
+                  <div className="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center group-hover:bg-blue-100 transition-colors duration-200">
+                    <Folder className="w-5 h-5 text-blue-600" />
                   </div>
                   <div className="flex items-center gap-2">
                     <Badge
@@ -58,10 +58,10 @@ const ProjectsSection = () => {
                 </div>
 
                 {/* Title & Category */}
-                <h3 className="text-lg font-bold text-slate-900 mb-1 group-hover:text-purple-700 transition-colors duration-200">
+                <h3 className="text-lg font-bold text-slate-900 mb-1 group-hover:text-blue-700 transition-colors duration-200">
                   {project.title}
                 </h3>
-                <span className="text-xs text-purple-500 font-medium uppercase tracking-wider">
+                <span className="text-xs text-blue-500 font-medium uppercase tracking-wider">
                   {project.category} · {project.year}
                 </span>
 
@@ -85,10 +85,10 @@ const ProjectsSection = () => {
 
               {/* Hover overlay link */}
               <div
-                className={`absolute inset-0 bg-purple-600/5 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none`}
+                className={`absolute inset-0 bg-blue-600/5 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none`}
               >
                 <div className="absolute bottom-4 right-4 pointer-events-auto">
-                  <button className="w-8 h-8 rounded-full bg-purple-600 flex items-center justify-center text-white shadow-lg hover:bg-purple-700 transition-colors">
+                  <button className="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white shadow-lg hover:bg-blue-700 transition-colors">
                     <ExternalLink className="w-3.5 h-3.5" />
                   </button>
                 </div>
