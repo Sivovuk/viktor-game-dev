@@ -46,32 +46,21 @@ const SkillsSection = () => {
         </div>
 
         {/* Skills grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="flex flex-wrap gap-3">
           {filtered.map((skill) => (
             <div
               key={skill.name}
-              className="group bg-white rounded-xl p-5 border border-slate-100 hover:border-purple-100 hover:shadow-md hover:shadow-purple-50/50 transition-all duration-300"
+              className="group bg-white rounded-xl px-5 py-3.5 border border-slate-100 hover:border-purple-200 hover:shadow-md hover:shadow-purple-50/50 transition-all duration-300"
             >
-              <div className="flex items-center justify-between mb-3">
-                <h3 className="text-sm font-semibold text-slate-800">
-                  {skill.name}
-                </h3>
-                <Badge
-                  variant="secondary"
-                  className="text-xs font-medium bg-purple-50 text-purple-600 border-0"
-                >
-                  {skill.level}%
-                </Badge>
-              </div>
-              <div className="w-full h-2 bg-slate-100 rounded-full overflow-hidden">
-                <div
-                  className="h-full rounded-full bg-gradient-to-r from-purple-500 to-purple-600 transition-all duration-700 ease-out"
-                  style={{ width: `${skill.level}%` }}
-                />
-              </div>
-              <span className="text-xs text-slate-400 mt-2 inline-block">
-                {skill.category}
+              <span className="text-sm font-semibold text-slate-800 group-hover:text-purple-700 transition-colors duration-200">
+                {skill.name}
               </span>
+              <Badge
+                variant="secondary"
+                className="ml-2.5 text-xs font-medium bg-purple-50 text-purple-600 border-0"
+              >
+                {skill.category}
+              </Badge>
             </div>
           ))}
         </div>
