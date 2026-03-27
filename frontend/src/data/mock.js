@@ -211,7 +211,7 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Renovi SDK",
+    title: "Unity Ads SDK",
     category: "SDK / Ad Platform",
     description: "Unity SDK for immersive in-game advertising across 2D/3D environments with REST API integration, ad lifecycle management, and viewability detection.",
     tech: ["Unity", "C#", "REST API", "SDK Design"],
@@ -220,7 +220,7 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Virtual Marble Soccer",
+    title: "WebGL Betting Game",
     category: "WebGL Betting Game",
     description: "WebGL betting game with real-time Firebase communication via Node.js backend, data synchronization, and browser-optimized performance.",
     tech: ["Unity", "WebGL", "Firebase", "Node.js"],
@@ -229,7 +229,7 @@ export const projects = [
   },
   {
     id: 4,
-    title: "Ascend the End",
+    title: "Extraction Shooter",
     category: "PvP Arena Looter Shooter",
     description: "Multiplayer PvP arena looter shooter with matchmaking for 100 players, combat systems, loot progression, and ~500 peak concurrent users.",
     tech: ["Unity", "Photon", "C#", "Matchmaking"],
@@ -238,7 +238,7 @@ export const projects = [
   },
   {
     id: 5,
-    title: "Urban Tale",
+    title: "Urban Life Simulator",
     category: "Steam PC Game",
     description: "2D top-down pixel art game with urban life simulation — NPC systems, in-game economy, and detailed sprite animations. ~90% positive reviews on Steam.",
     tech: ["Unity", "C#", "Steam", "Pixel Art"],
@@ -247,7 +247,7 @@ export const projects = [
   },
   {
     id: 6,
-    title: "100 Doors Escape From School",
+    title: "100 Doors Puzzle",
     category: "Mobile Puzzle",
     description: "Complex puzzle escape game with advanced level systems and UX optimization. Published on Android and iOS.",
     tech: ["Unity", "C#", "Android", "iOS"],
