@@ -24,7 +24,7 @@ const SkillsSection = () => {
             My technical toolkit.
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl">
-            A deep stack built over 8+ years of shipping games across platforms.
+            The technical toolkit behind every shipped title and production system.
           </p>
         </div>
 

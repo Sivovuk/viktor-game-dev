@@ -36,8 +36,8 @@ const HeroSection = () => {
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-slate-900 leading-[1.08] tracking-tight mb-6">
             Hey. I'm Viktor —
             <br />
-            <span className="text-purple-600">Unity developer</span>{" "}
-            and game craftsman.
+            <span className="text-purple-600">multiplayer</span> &{" "}
+            <span className="text-purple-600">systems</span> engineer.
           </h1>
 
           {/* Bio */}

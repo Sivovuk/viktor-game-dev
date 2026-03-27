@@ -19,8 +19,8 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-sm text-slate-400 max-w-sm">
-              Senior Unity Developer based in {personalInfo.location}.
-              Building games that players remember.
+              Senior Unity Developer & Systems Engineer based in {personalInfo.location}.
+              Building multiplayer systems that scale.
             </p>
           </div>
 
